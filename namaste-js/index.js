@@ -1,19 +1,9 @@
-const a = 1;
+setTimeout(() => {
+	console.log("Inside timeout");
+}, 2000);
 
-function x() {
-	const c = 10;
+fetch("http://someurl.com")
+	.then((res) => console.log(res))
+	.catch((err) => console.log(err));
 
-	function y() {
-		var d = 20;
-
-		function z() {
-			console.log(c, d);
-		}
-
-		z();
-	}
-
-	y();
-}
-
-x();
+// has 1 million lines of code
